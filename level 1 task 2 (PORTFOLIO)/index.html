@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Cpmpatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Pratik.</a>
+
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Web Developer</h3>
+            <h1>Hi, I'm Pratik Kumar Singh</h1>
+            <h2>From India</h2>
+
+            <div class="icons">
+                <a href="https://github.com/PratikKumarSingh2503"><i class='bx bxl-github'></i></a>
+                <a href="https://twitter.com/PratikSingh819"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/pratik-kumar-singh-aa6746221/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!----------About Me ----->
+    <div id="about">
+        <div class="container">
+            <div class="row1">
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus blanditiis provident corporis
+                        dicta praesentium ullam debitis, est accusantium repudiandae autem quos cumque suscipit
+                        consectetur ut molestiae, consequuntur necessitatibus veniam commodi.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Programming Languages</span><br>Java Programming</li>
+                            <li><span>React fundamentals</span><br>Javscript, Native, Node.js</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Intership at Codsoft</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>B. Tech from MSIT Kolkata</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about-col-1">
+                    <h1 class="sub-title">Project Section</h1>
+                    <div class="projectContent">
+                        <div class="projectImg">
+                            <img src="project1.png" alt="" height="400px" width="400px" />
+                            <h4>Tribute Page</h4>
+                        </div>
+                        <div class="projectImg">
+                            <img src="project2.png" alt="" height="400px" width="400px" />
+                            <h4>Landing Page</h4>
+                        </div>
+                    </div>
+                    <p>Currently, working on tasks allocated by CODSOFT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------contact--------->
+    <div id="contact">
+        <div class="container">
+            <div class="row2">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class='bx bxs-paper-plane'></i> pratikkumarsingh819@gmail.com</p>
+                    <p><i class='bx bxs-phone'></i> +916291387175</p>
+
+                    <div class="icons">
+                        <a href="https://github.com/PratikKumarSingh2503"><i class='bx bxl-github'></i></a>
+                        <a href="https://twitter.com/PratikSingh819"><i class='bx bxl-twitter'></i></a>
+                        <a href="https://www.linkedin.com/in/pratik-kumar-singh-aa6746221/"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+
+                    <div class="btn-box">
+                        <a href="#">CONTACT ME</a>
+                        <a href="my-cv.pdf">DOWNLOAD CV</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn-box2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyrigth">
+            <p>Copywright &#169 Pratik.Made with <i class='bx bx-happy-heart-eyes'></i> by Pratik</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>

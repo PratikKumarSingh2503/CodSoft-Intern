@@ -1,0 +1,36 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellowgreen;
+}
+
+
+.left{
+    margin-left: 40px;
+    padding: 10px;
+}
+.left h3{
+    color: red;
+}
+.left span{
+    color: orange;
+}
+
+
+.middle{
+    width: 50%;
+    padding: 10px;
+}
+.middle :link{
+    margin-left: 60px;
+}
+
+
+.right{
+    display: flex;
+    padding: 10px;
+    margin-right: 40px;
+}
+.login{
+    padding-left: 20px;
+}
