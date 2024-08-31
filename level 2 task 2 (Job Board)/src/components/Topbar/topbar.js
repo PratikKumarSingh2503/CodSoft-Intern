@@ -6,7 +6,7 @@ const Topbar = () => {
     return (
         <div className='nav'>
             <div className='left'>
-                <h3>News<span>Mania</span></h3>
+                <h3>Job<span>Board</span></h3>
             </div>
 
             <div className='middle'>
